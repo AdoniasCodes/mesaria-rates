@@ -1,0 +1,20 @@
+{
+  "name": "mesaria-rates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily Ethiopian exchange-rate collector for Mesaria",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types src/run.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "vitest": "^5.0.3"
+  }
+}

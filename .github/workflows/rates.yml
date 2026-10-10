@@ -1,0 +1,65 @@
+name: rates
+
+on:
+  schedule:
+    # 06:30 UTC, after CBE publishes (about 05:19 UTC)
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rates
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Fetch the previous rates.json from the rates-data branch (if any)
+        run: |
+          mkdir -p out
+          if git fetch --depth=1 origin rates-data; then
+            git show FETCH_HEAD:rates.json > out/previous.json || rm -f out/previous.json
+          else
+            echo "No rates-data branch yet"
+          fi
+
+      - name: Collect rates
+        env:
+          PREVIOUS_RATES: out/previous.json
+        run: pnpm start
+
+      - name: Publish rates.json to the rates-data branch
+        if: ${{ !cancelled() && hashFiles('out/rates.json') != '' }}
+        run: |
+          STAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          PUB="$RUNNER_TEMP/publish"
+          mkdir -p "$PUB"
+          cp out/rates.json "$PUB/rates.json"
+          printf '# Mesaria rates data\n\nGenerated at %s by the rates workflow.\n\nThis branch holds one commit with rates.json, copied each morning from the public exchange-rate pages of Ethiopian banks and the National Bank of Ethiopia. It is overwritten every day. Do not edit by hand.\n' "$STAMP" > "$PUB/README.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan rates-data-publish
+          git rm -rf -q .
+          cp "$PUB/rates.json" "$PUB/README.md" .
+          git add rates.json README.md
+          git commit -q -m "rates $STAMP"
+          git push --force origin HEAD:refs/heads/rates-data
