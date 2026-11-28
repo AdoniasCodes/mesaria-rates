@@ -1,0 +1,698 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-28T15:46:17.538Z",
+  "banks": [
+    {
+      "id": "nbe",
+      "name": "National Bank of Ethiopia",
+      "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "status": "ok",
+      "sourceDate": "2026-11-27"
+    },
+    {
+      "id": "cbe",
+      "name": "Commercial Bank of Ethiopia",
+      "nameAm": "",
+      "sourceUrl": "https://combanketh.et/cbeapi/daily-exchange-rates",
+      "status": "unavailable",
+      "sourceDate": null,
+      "note": "https://combanketh.et/cbeapi/daily-exchange-rates?_sort=Date:DESC&_limit=1: fetch failed (after 3 tries)"
+    },
+    {
+      "id": "amhara",
+      "name": "Amhara Bank",
+      "nameAm": "",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/",
+      "status": "ok",
+      "sourceDate": "2026-11-28"
+    },
+    {
+      "id": "nib",
+      "name": "Nib International Bank",
+      "nameAm": "ንብ ኢንተርናሽናል ባንክ",
+      "sourceUrl": "https://www.nibbanksc.com/",
+      "status": "unavailable",
+      "sourceDate": null,
+      "note": "https://www.nibbanksc.com/: HTTP 403 (after 3 tries)"
+    },
+    {
+      "id": "dashen",
+      "name": "Dashen Bank",
+      "nameAm": "",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "status": "stale",
+      "sourceDate": "2026-11-27",
+      "note": "Today's fetch failed: https://dashenbanksc.com/daily-exchange-rates/: HTTP 403 (after 3 tries)"
+    },
+    {
+      "id": "boa",
+      "name": "Bank of Abyssinia",
+      "nameAm": "",
+      "sourceUrl": "https://www.bankofabyssinia.com/exchange-rate-2/",
+      "status": "unavailable",
+      "sourceDate": null,
+      "note": "BoA: date not found"
+    }
+  ],
+  "rates": [
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "USD",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 161.4546,
+      "indicativeSelling": 163.0691
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "GBP",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 211.5863,
+      "indicativeSelling": 213.7021
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "CHF",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 193.4978,
+      "indicativeSelling": 195.4328
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "SEK",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 15.7894,
+      "indicativeSelling": 15.9473
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "NOK",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 16.5196,
+      "indicativeSelling": 16.6848
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "DKK",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 23.6938,
+      "indicativeSelling": 23.9308
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "DJF",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 0.9043,
+      "indicativeSelling": 0.9314
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "INR",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 1.7463,
+      "indicativeSelling": 1.7638
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "KES",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 1.2377,
+      "indicativeSelling": 1.2748
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "JPY",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 1.0135,
+      "indicativeSelling": 1.0236
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "CAD",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 113.3174,
+      "indicativeSelling": 114.4506
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "AUD",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 107.0283,
+      "indicativeSelling": 108.0985
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "SAR",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 43.0408,
+      "indicativeSelling": 43.4712
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "AED",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 43.9571,
+      "indicativeSelling": 44.3967
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "EUR",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 177.0996,
+      "indicativeSelling": 178.8705
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "XDR",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 216.6236,
+      "indicativeSelling": 218.7899
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "ZAR",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 9.2064,
+      "indicativeSelling": 9.2984
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "CNY",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 24.2399,
+      "indicativeSelling": 24.4823
+    },
+    {
+      "bank": {
+        "id": "nbe",
+        "name": "National Bank of Ethiopia",
+        "nameAm": "የኢትዮጵያ ብሔራዊ ባንክ"
+      },
+      "currency": "KWD",
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://api.nbe.gov.et/api/get-exchange-rates",
+      "indicativeBuying": 522.5962,
+      "indicativeSelling": 527.8222
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "USD",
+      "cashBuying": 162.0549,
+      "cashSelling": 165.296,
+      "transactionalBuying": 162.0549,
+      "transactionalSelling": 165.296,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "GBP",
+      "cashBuying": 212.4216,
+      "cashSelling": 216.67,
+      "transactionalBuying": 212.4216,
+      "transactionalSelling": 216.67,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "EUR",
+      "cashBuying": 187.4081,
+      "cashSelling": 191.1563,
+      "transactionalBuying": 187.4081,
+      "transactionalSelling": 191.1563,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "CAD",
+      "cashBuying": 113.7627,
+      "cashSelling": 116.0379,
+      "transactionalBuying": 113.7627,
+      "transactionalSelling": 116.0379,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "AED",
+      "cashBuying": 44.123,
+      "cashSelling": 45.0054,
+      "transactionalBuying": 44.123,
+      "transactionalSelling": 45.0054,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "SAR",
+      "cashBuying": 43.2054,
+      "cashSelling": 44.0695,
+      "transactionalBuying": 43.2054,
+      "transactionalSelling": 44.0695,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "JPY",
+      "transactionalBuying": 1.07,
+      "transactionalSelling": 1.0914,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "amhara",
+        "name": "Amhara Bank"
+      },
+      "currency": "CNY",
+      "transactionalBuying": 24.3337,
+      "transactionalSelling": 24.8203,
+      "sourceDate": "2026-11-28",
+      "sourceUrl": "https://www.amharabank.com.et/daily-exchange-rate/"
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "USD",
+      "transactionalBuying": 161.1787,
+      "transactionalSelling": 164.4023,
+      "cashBuying": 161.1787,
+      "cashSelling": 164.4023,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "GBP",
+      "transactionalBuying": 212.846,
+      "transactionalSelling": 217.1029,
+      "cashBuying": 212.846,
+      "cashSelling": 217.1029,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "AED",
+      "transactionalBuying": 46.1934,
+      "transactionalSelling": 47.1173,
+      "cashBuying": 46.1934,
+      "cashSelling": 47.1173,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "EUR",
+      "transactionalBuying": 187.2025,
+      "transactionalSelling": 190.9465,
+      "cashBuying": 187.2025,
+      "cashSelling": 190.9465,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "CHF",
+      "transactionalBuying": 204.4831,
+      "transactionalSelling": 208.5728,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "KES",
+      "transactionalBuying": 1.2141,
+      "transactionalSelling": 1.2384,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "ZAR",
+      "transactionalBuying": 8.7343,
+      "transactionalSelling": 8.909,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "SEK",
+      "transactionalBuying": 14.878,
+      "transactionalSelling": 15.1756,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "JPY",
+      "transactionalBuying": 1.0625,
+      "transactionalSelling": 1.0838,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "CAD",
+      "cashBuying": 116.6427,
+      "cashSelling": 118.9756,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "SAR",
+      "cashBuying": 45.2519,
+      "cashSelling": 46.1569,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    },
+    {
+      "bank": {
+        "id": "dashen",
+        "name": "Dashen Bank"
+      },
+      "currency": "CNY",
+      "cashBuying": 22.3617,
+      "cashSelling": 22.8089,
+      "sourceDate": "2026-11-27",
+      "sourceUrl": "https://dashenbanksc.com/daily-exchange-rates/",
+      "stale": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "cbe",
+      "name": "Commercial Bank of Ethiopia",
+      "nameAm": "",
+      "reason": "Could not read today: https://combanketh.et/cbeapi/daily-exchange-rates?_sort=Date:DESC&_limit=1: fetch failed (after 3 tries)"
+    },
+    {
+      "id": "nib",
+      "name": "Nib International Bank",
+      "nameAm": "ንብ ኢንተርናሽናል ባንክ",
+      "reason": "Could not read today: https://www.nibbanksc.com/: HTTP 403 (after 3 tries)"
+    },
+    {
+      "id": "boa",
+      "name": "Bank of Abyssinia",
+      "nameAm": "",
+      "reason": "Could not read today: BoA: date not found"
+    },
+    {
+      "id": "awash",
+      "name": "Awash Bank",
+      "nameAm": "",
+      "reason": "Rates load by script with a security token; needs a headless browser"
+    },
+    {
+      "id": "zemen",
+      "name": "Zemen Bank",
+      "nameAm": "",
+      "reason": "Rates load by script after the page opens; no stable source found"
+    },
+    {
+      "id": "coopbankoromia",
+      "name": "Cooperative Bank of Oromia",
+      "nameAm": "",
+      "reason": "Page takes about 40 seconds to answer; parser not built yet"
+    },
+    {
+      "id": "oromia",
+      "name": "Oromia Bank",
+      "nameAm": "",
+      "reason": "Website not reachable from our server"
+    },
+    {
+      "id": "wegagen",
+      "name": "Wegagen Bank",
+      "nameAm": "",
+      "reason": "Website blocks automatic readers; parser not built yet"
+    },
+    {
+      "id": "hibret",
+      "name": "Hibret Bank",
+      "nameAm": "",
+      "reason": "Slow site and only 4 currencies; parser not built yet"
+    },
+    {
+      "id": "bunna",
+      "name": "Bunna Bank",
+      "nameAm": "",
+      "reason": "Table has missing rows and no clear date; parser not built yet"
+    },
+    {
+      "id": "abay",
+      "name": "Abay Bank",
+      "nameAm": "",
+      "reason": "Two tables with different dates and gaps; parser not built yet"
+    },
+    {
+      "id": "enat",
+      "name": "Enat Bank",
+      "nameAm": "",
+      "reason": "Rates sit in tabs; parser not built yet"
+    },
+    {
+      "id": "berhan",
+      "name": "Berhan Bank",
+      "nameAm": "",
+      "reason": "Parser not built yet (no cash and transaction split on the page)"
+    },
+    {
+      "id": "siinqee",
+      "name": "Siinqee Bank",
+      "nameAm": "",
+      "reason": "Parser not built yet"
+    },
+    {
+      "id": "lion",
+      "name": "Lion International Bank",
+      "nameAm": "",
+      "reason": "Website not reachable from our server"
+    },
+    {
+      "id": "global",
+      "name": "Global Bank Ethiopia",
+      "nameAm": "",
+      "reason": "Website not reachable from our server"
+    },
+    {
+      "id": "addis",
+      "name": "Addis International Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "ahadu",
+      "name": "Ahadu Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "tsehay",
+      "name": "Tsehay Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "hijra",
+      "name": "Hijra Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "zamzam",
+      "name": "ZamZam Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "gohbetoch",
+      "name": "Goh Betoch Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "tsedey",
+      "name": "Tsedey Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "gadaa",
+      "name": "Gadaa Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "rammis",
+      "name": "Rammis Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    },
+    {
+      "id": "shabelle",
+      "name": "Shabelle Bank",
+      "nameAm": "",
+      "reason": "Not checked yet"
+    }
+  ]
+}
